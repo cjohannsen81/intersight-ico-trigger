@@ -9,13 +9,13 @@ from intersight.model.workflow_initiator_context import WorkflowInitiatorContext
 from intersight.model.workflow_workflow_definition_relationship import WorkflowWorkflowDefinitionRelationship
 from pprint import pprint
 
-moId = "62017e58696f6e2d338f918cc"
+moId = "Workflow run MoId"
 
 mo = WorkflowWorkflowInfo(
     action="Start",
     associated_object=MoBaseMoRelationship(
         class_id="mo.MoRef",
-        moid="5ddea9626972652d32b67d21",
+        moid="Organization MoId",
         object_type="organization.Organization"
     ),
     input={
@@ -24,7 +24,7 @@ mo = WorkflowWorkflowInfo(
     name="Send Message to Webex Teams",
     workflow_definition=WorkflowWorkflowDefinitionRelationship(
         class_id="mo.MoRef",
-        moid="61b81012696f6e2d33259fba",
+        moid="Workflow Definition MoId",
         object_type="workflow.WorkflowDefinition"
     )
 )
